@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="index">
+   <view class="title">
+      {{userName}}热点 | 关注
+   </view>
+
+   <view class="btn-area">  
+    <view class="area {{currentTab===0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">足球现场</view>  
+    <view class="area {{currentTab===1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">足球生活</view>  
+    <view class="area {{currentTab===2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">足球美女</view>  
+   </view>  
+
+   <swiper duration="1000" circular="true" class="swiper-box" current="{{currentTab}}" bindchange="bindChange">
+      <swiper-item class="item-box">
+         <block wx:for="{{arr}}" wx:for-item="i">
+            <view class="img-item">
+               <image src="{{i.img}}" class="image"/>
+               <text>{{i.text}}</text>
+            </view>
+         </block>
+      </swiper-item>
+      <swiper-item class="item">
+         <block wx:for="{{life}}" wx:for-item="i">
+            <view class="img">
+               <image src="{{i.img}}" class="image"/>
+               <text>{{i.text}}</text>
+            </view>
+         </block>
+      </swiper-item>
+      <swiper-item class="item-box">
+         <block wx:for="{{arr}}" wx:for-item="i">
+            <view class="img-item">
+               <image src="{{i.img}}" class="image"/>
+               <text>{{i.text}}</text>
+            </view>
+         </block>
+      </swiper-item>
+    </swiper>
+   
+</view>

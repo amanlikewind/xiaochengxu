@@ -1,0 +1,33 @@
+.title{
+   height: 50px;
+   background: #0dc441;
+   color: #fff;
+   text-align: center;
+   line-height: 50px;
+}
+.number{
+   border-bottom: 1px solid #ccc;
+   height: 50px;
+   margin: 20px 25px 0;
+}
+.password{
+   border-bottom: 1px solid #ccc;
+   height: 50px;
+   margin: 20px 25px 0;
+}
+.text{
+   display: block;
+   margin: 10px 25px;
+   color: #ccc;
+}
+.btn{
+   margin: 30px 25px 0;
+   background: #0dc441;
+   color: #fff;
+}
+.hover{
+   background: #5fb076;
+}
+.plclass{
+  color: aquamarine;
+}

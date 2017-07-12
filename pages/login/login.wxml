@@ -1,0 +1,10 @@
+<view class="login">
+   <view class="title">足球圈 - 登录</view>
+   <input bindinput="handleName" class="number" focus type="number" placeholder="手机号" placeholder-class="plclass" />
+   <input bindinput="handlePwd" class="password" type="password" placeholder="密码" placeholder-class="plclass" />
+   <view class="text">
+      <text>还没有账号？点击此处立即</text> 
+      <navigator url="/">注册</navigator> 
+   </view>
+   <button hover-class="hover" class="btn" bindtap="submit">提 交</button>
+</view>

@@ -1,0 +1,4 @@
+.userBox{
+   height: 600px;
+   background: "#e7e7e7"
+}
